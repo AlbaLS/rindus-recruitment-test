@@ -1,3 +1,9 @@
 {
-  "ignoreTestFiles": ["*.js", "*.md"]
+  "scripts":{
+    "cypress:loginPage": "cypress run -e TAGS='@login_page' --spec ./**/login.feature"
+  },
+  "baseUrl": "https://www.douglas.de",
+  "loginUrl": "https://www.douglas.de/de/login",
+  "ignoreTestFiles": ["*.js", "*.md"],
+  "watchForFileChanges": false
 }
