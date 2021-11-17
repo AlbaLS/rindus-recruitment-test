@@ -2,21 +2,11 @@
 
 ---
 
-### Install the dependencies
+#### Install the dependencies
 Run ```npm install```
 
-### How to run the test
-Run the test without visual mode:
-- Execute all the login page scenarios: ```npm run cypress:loginPage```
-- Execute all the login process scenarios: ```npm run cypress:loginProcess```
-- Execute all the registration process scenarios: ```npm run cypress:registrationProcess```
-- Execute all the forgot password scenarios: ```npm run cypress:forgotPasswordProcess```
-
-Run the test in visual mode:
-- Execute ````npm run cypress:visual```` and select the feature that you want to launch.
-
-#### Environment Variables  
-As we need to log into www.douglas.de, we need to set the credentials as environment variables. 
+#### Environment Variables
+As we need to log into www.douglas.de, we need to set the credentials as environment variables.
 
 I recommend to add a ```cypress.env.json``` file under ```rindus-recruitment-test``` folder with the following fields:
 ```
@@ -30,6 +20,15 @@ I recommend to add a ```cypress.env.json``` file under ```rindus-recruitment-tes
 
 There are some other ways to add the environment variables here: https://docs.cypress.io/guides/guides/environment-variables
 
+### How to run the test
+Run the test without visual mode:
+- Execute all the login page scenarios: ```npm run cypress:loginPage```
+- Execute all the login process scenarios: ```npm run cypress:loginProcess```
+- Execute all the registration process scenarios: ```npm run cypress:registrationProcess```
+- Execute all the forgot password scenarios: ```npm run cypress:forgotPasswordProcess```
+
+Run the test in visual mode:
+- Execute ````npm run cypress:visual```` and select the feature that you want to launch.
 
 #### QA Notes after testing
 I have realized that the forgot password email is not validated, so I can add whatever text and it shows "the message have been sent".
