@@ -30,6 +30,9 @@ Run the test without visual mode:
 Run the test in visual mode:
 - Execute ````npm run cypress:visual```` and select the feature that you want to launch.
 
+Test are running using Electron by default. If you want to use a different browser as, for example, Chrome, add ```-- --browser chrome```
+
+
 #### QA Notes after testing
 I have realized that the forgot password email is not validated, so I can add whatever text and it shows "the message have been sent".
 
