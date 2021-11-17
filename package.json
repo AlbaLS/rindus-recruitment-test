@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:loginPage": "cypress run -e TAGS='@login_page' --spec ./**/login.feature",
+    "cypress:loginProcess": "cypress run -e TAGS='@login_process' --spec ./**/login.feature",
+    "cypress:registrationProcess": "cypress run -e TAGS='@registration_process' --spec ./**/register.feature",
+    "cypress:forgotPasswordProcess": "cypress run -e TAGS='@forgotPassword_process' --spec ./**/forgot_password.feature",
+    "cypress:visual": "cypress open"
   },
   "author": "Alba Lomeña",
   "license": "ISC",

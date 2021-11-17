@@ -41,6 +41,7 @@ Then(/^I log in with (correct|wrong username|wrong password) credentials and (st
                 click();
         });
 });
+
 Then(/^The logged page is shown$/, () => {
     cy.contains(Cypress.env('userName'))
     cy.contains("herzlich willkommen in deinem Benutzerkonto! Hier kannst du deine Bestellungen und persönlichen Daten verwalten und dich über exklusive Aktionen freuen.")

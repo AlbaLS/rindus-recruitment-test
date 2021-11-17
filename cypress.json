@@ -1,9 +1,10 @@
 {
-  "scripts":{
-    "cypress:loginPage": "cypress run -e TAGS='@login_page' --spec ./**/login.feature"
-  },
   "baseUrl": "https://www.douglas.de",
   "loginUrl": "https://www.douglas.de/de/login",
   "ignoreTestFiles": ["*.js", "*.md"],
-  "watchForFileChanges": false
+  "watchForFileChanges": false,
+  "defaultCommandTimeout":120000,
+  "requestTimeout": 60000,
+  "responseTimeout": 100000,
+  "pageLoadTimeout": 120000
 }
