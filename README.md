@@ -8,7 +8,7 @@ Run ```npm install```
 #### Environment Variables
 As we need to log into www.douglas.de, we need to set the credentials as environment variables.
 
-I recommend to add a ```cypress.env.json``` file under ```rindus-recruitment-test``` folder with the following fields:
+I recommend adding a ```cypress.env.json``` file under ```rindus-recruitment-test``` folder with the following fields:
 ```
     {
         "userEmail": {email},

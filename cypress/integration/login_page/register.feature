@@ -33,5 +33,6 @@ Feature: Register
     And The page shows 'Hallo Alba Lomena'
     And I go to Douglas login page
     When I complete the register process with Alba as firstName, Lomena as lastName, correct as birthday, Frau as gender, existing email as email and 123456 as password
+    And I click on submit the registration
     Then The page shows 'Die E-Mail-Adresse ist bereits registriert.'
 
